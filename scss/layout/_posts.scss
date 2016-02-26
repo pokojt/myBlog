@@ -1,15 +1,10 @@
-
-//
-
-// @include background-image(linear-gradient(rgba($spaceOrange, 0.45),rgba($spaceOrange, 0.45)),url("#{$path-img}/copernicus.jpg"));
-
-  // @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/girl.jpg"));
-
-
+// Styles for blog posts
 
 .row {
   overflow: auto;
 }
+
+// Styles for the featured post, left side
 
 #featuredPost::-webkit-scrollbar {
     display: none;
@@ -41,6 +36,10 @@
   }
 }
 
+// Styles for the recent posts, right side
+
+
+
 #postSummaries {
   width: 50%;
   float: left;
@@ -54,6 +53,13 @@
     &:hover {
       height: 29vh;
       -webkit-transition: height .3s linear;
+      @media screen and #{$brk-smallDesktop} {
+        height: 27vh;
+      }
+    }
+    @media screen and #{$brk-smallDesktop} {
+      height: 25vh;
+      overflow: hidden;
     }
   }
   #post1 {
@@ -82,6 +88,12 @@
     }
     .recent {
       @include text(11px, normal, null, 2px, lightgray);
+      @media screen and #{$brk-smallDesktop} {
+        display: none;
+      }
+    }
+    @media screen and #{$brk-smallDesktop} {
+      @include position(relative, 0% auto 5% auto);
     }
   }
 }

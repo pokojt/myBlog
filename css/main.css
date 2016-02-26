@@ -56,6 +56,13 @@ body {
     #postSummaries .summary:hover {
       height: 29vh;
       -webkit-transition: height .3s linear; }
+      @media screen and (max-height: 1060px) {
+        #postSummaries .summary:hover {
+          height: 27vh; } }
+    @media screen and (max-height: 1060px) {
+      #postSummaries .summary {
+        height: 25vh;
+        overflow: hidden; } }
   #postSummaries #post1 {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/tea.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/tea.jpg"); }
@@ -88,6 +95,16 @@ body {
       font-weight: normal;
       letter-spacing: 2px;
       color: lightgray; }
+      @media screen and (max-height: 1060px) {
+        #postSummaries .summaryText .recent {
+          display: none; } }
+    @media screen and (max-height: 1060px) {
+      #postSummaries .summaryText {
+        position: relative;
+        top: 0%;
+        right: auto;
+        bottom: 5%;
+        left: auto; } }
 
 .pageWrapper {
   max-width: 98%;
@@ -206,7 +223,8 @@ a {
   color: white;
   padding: 2% 5% 2% 5%;
   opacity: .7;
-  background-color: #444444; }
+  background-color: #444444;
+  overflow: hidden; }
   #featuredPost .likesComments .commentBox {
     text-align: left;
     clear: both; }
@@ -223,16 +241,16 @@ a {
   #featuredPost .likesComments .fakeComments .comment1 {
     text-align: left;
     overflow: auto;
-    margin-top: 20px; }
+    margin-top: 15px; }
     #featuredPost .likesComments .fakeComments .comment1 h3 {
       font-size: 16px;
       margin-bottom: 3px;
       color: black; }
     #featuredPost .likesComments .fakeComments .comment1 p {
-      margin-top: 5px;
-      padding-left: 10px;
       font-size: 14px;
-      line-height: 20px; }
+      line-height: 20px;
+      margin-top: 5px;
+      padding-left: 10px; }
 
 @font-face {
   font-family: 'courier';

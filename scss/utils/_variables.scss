@@ -4,10 +4,13 @@ $white: white;
 $backgroundWhite: #FFF7F5;
 $navHover: $backgroundWhite;
 
-// Functional Color Variables
-
 
 // Asset Paths
 
 $path-img: "../img";
 $path-font: "../fonts";
+
+
+// Media Queries
+
+$brk-smallDesktop: "(max-height: 1060px)";
