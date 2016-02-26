@@ -10,11 +10,17 @@
 .row {
   overflow: auto;
 }
+
+#featuredPost::-webkit-scrollbar {
+    display: none;
+}
+
 #featuredPost {
   width: 50%;
   float: left;
   background: $white;
   opacity: .8;
+  overflow: scroll;
   height: 100vh;
   .featuredImg {
     height: 50vh;

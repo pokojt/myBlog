@@ -14,11 +14,15 @@ body {
 .row {
   overflow: auto; }
 
+#featuredPost::-webkit-scrollbar {
+  display: none; }
+
 #featuredPost {
   width: 50%;
   float: left;
   background: white;
   opacity: .8;
+  overflow: scroll;
   height: 100vh; }
   #featuredPost .featuredImg {
     height: 50vh;
@@ -80,6 +84,9 @@ body {
     content: "";
     display: table; }
 
+.contentWrapper {
+  height: 100%; }
+
 .header {
   margin-top: 0 !important;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/girl2.jpg");
@@ -138,6 +145,9 @@ html, body {
 body {
   background: #DAD4CA;
   font-family: sans-serif; }
+
+body::-webkit-scrollbar {
+  display: none; }
 
 a {
   text-decoration: none; }

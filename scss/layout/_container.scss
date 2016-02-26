@@ -1,3 +1,7 @@
 .pageWrapper {
   @include outer-container(98%);
 }
+
+.contentWrapper {
+  height: 100%;
+}
