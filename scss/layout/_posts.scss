@@ -99,6 +99,11 @@
     h2 {
       letter-spacing: 4px;
       font-family: 'courier';
+      &:hover {
+        border-bottom: 1px solid white;
+        letter-spacing: 6px;
+        -webkit-transition: letter-spacing .2s linear;
+      }
       @media screen and #{$brk-mobilesmall} {
         font-size: 1em;
       }

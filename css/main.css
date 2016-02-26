@@ -105,6 +105,10 @@ body {
     #postSummaries .summaryText h2 {
       letter-spacing: 4px;
       font-family: 'courier'; }
+      #postSummaries .summaryText h2:hover {
+        border-bottom: 1px solid white;
+        letter-spacing: 6px;
+        -webkit-transition: letter-spacing .2s linear; }
       @media screen and (max-width: 336px) {
         #postSummaries .summaryText h2 {
           font-size: 1em; } }
