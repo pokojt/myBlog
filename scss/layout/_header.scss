@@ -1,10 +1,10 @@
 .header {
   margin-top: 0 !important;
-  @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/girl2.jpg"));
+  @include background-image(linear-gradient(rgba(black, 0),rgba(black, 0)),url("#{$path-img}/forest.jpeg"));
   background-size: cover;
   height: 50vh;
   .headerText {
     @include position(relative, 30% auto 10% auto);
-    @include text(null, normal, normal, 5px, white);
+    @include text(null, normal, normal, 5px, $navBrown);
   }
 }

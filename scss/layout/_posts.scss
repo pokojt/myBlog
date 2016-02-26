@@ -18,7 +18,7 @@
 #featuredPost {
   width: 50%;
   float: left;
-  background: $white;
+  background: $backgroundWhite;
   opacity: .8;
   overflow: scroll;
   height: 100vh;
@@ -26,7 +26,7 @@
     height: 50vh;
     width: 100%;
     background-size: cover;
-    @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/forest.jpeg"));
+    @include background-image(linear-gradient(rgba(black, 0.05),rgba(black, 0.05)),url("#{$path-img}/rain.jpeg"));
   }
   .featuredText {
     @extend %columnText;
