@@ -10,6 +10,9 @@
     list-style-type: none;
     margin: 0 auto;
     height: 5vh;
+    @media screen and #{$brk-smallDesktop} {
+      height: 6vh;
+    }
     li {
       display: inline-block;
       @include text(12px, normal, null, 2px, $white);

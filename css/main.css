@@ -161,6 +161,9 @@ body {
     list-style-type: none;
     margin: 0 auto;
     height: 5vh; }
+    @media screen and (max-height: 1060px) {
+      .navbar ul {
+        height: 6vh; } }
     .navbar ul li {
       display: inline-block;
       font-size: 12px;
