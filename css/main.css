@@ -18,12 +18,12 @@ body {
   display: none; }
 
 #featuredPost {
+  height: 100vh;
   width: 50%;
   float: left;
   background: #FFF7F5;
   opacity: .8;
-  overflow: scroll;
-  height: 100vh; }
+  overflow: scroll; }
   @media screen and (max-width: 1100px) {
     #featuredPost {
       width: 60%; } }
@@ -101,7 +101,7 @@ body {
     bottom: 5%;
     left: auto;
     font-weight: lighter;
-    color: lightgray; }
+    color: #d9d9d9; }
     #postSummaries .summaryText h2 {
       letter-spacing: 4px;
       font-family: 'courier'; }
@@ -118,7 +118,7 @@ body {
       font-size: 11px;
       font-weight: normal;
       letter-spacing: 2px;
-      color: lightgray; }
+      color: #d9d9d9; }
       @media screen and (max-height: 1140px) {
         #postSummaries .summaryText .recent {
           display: none; } }

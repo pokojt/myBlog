@@ -11,12 +11,11 @@
 }
 
 #featuredPost {
-  width: 50%;
+  @include size(50% 100vh);
   float: left;
   background: $backgroundWhite;
   opacity: .8;
   overflow: scroll;
-  height: 100vh;
   @media screen and #{$brk-smallDesktopcontainer} {
     width: 60%;
   }
@@ -25,8 +24,7 @@
     width: 100%;
   }
   .featuredImg {
-    height: 50vh;
-    width: 100%;
+    @include size(100% 50vh);
     background-size: cover;
     @include background-image(linear-gradient(rgba(black, 0.05),rgba(black, 0.05)),url("#{$path-img}/rain.jpeg"));
     @media screen and #{$brk-oneColumn} {
@@ -95,7 +93,7 @@
   }
   .summaryText {
     @include position(relative,9% auto 5% auto);
-    @include text(null, lighter, null, null, lightgray);
+    @include text(null, lighter, null, null, $lightgray);
     h2 {
       letter-spacing: 4px;
       font-family: 'courier';
@@ -112,7 +110,7 @@
       font-size: .9em;
     }
     .recent {
-      @include text(11px, normal, null, 2px, lightgray);
+      @include text(11px, normal, null, 2px, $lightgray);
       @media screen and #{$brk-smallDesktop} {
         display: none;
       }
@@ -128,8 +126,6 @@
     display: none;
   }
 }
-
-
 .briefSummary {
   @media screen and #{$brk-mobileLarge} {
     display: none;
