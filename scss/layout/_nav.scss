@@ -1,4 +1,8 @@
 .navbar {
+  position: top;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
   ul {
     overflow: auto;
     width: 100%;
@@ -7,15 +11,16 @@
     margin: 0 auto;
     li {
       display: inline-block;
-      @include text(15px, normal, null, 1px, $white);
+      @include text(12px, normal, null, 2px, $white);
       @include margin(2%);
       @include padding(0 0 4px 0);
       color: white;
       &:hover {
         color: $navHover;
-        border-bottom: 1px solid $navHover;
-        -webkit-transition: border .4s linear;
+        border-bottom: 2px solid $navHover;
+        -webkit-transition: border .4s slide-in;
         -webkit-transition: color .2s linear;
+        cursor: pointer;
       }
     }
   }

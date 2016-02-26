@@ -59,6 +59,7 @@ body {
     display: table; }
 
 .header {
+  margin-top: 0 !important;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/girl2.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/girl2.jpg");
   background-size: cover;
@@ -74,26 +75,32 @@ body {
     letter-spacing: 5px;
     color: white; }
 
-.navbar ul {
-  overflow: auto;
+.navbar {
+  position: top;
+  z-index: 1;
   width: 100%;
-  background-color: #565148;
-  list-style-type: none;
   margin: 0 auto; }
-  .navbar ul li {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    color: white;
-    margin: 2%;
-    padding: 0 0 4px;
-    color: white; }
-    .navbar ul li:hover {
-      color: #DAD4CA;
-      border-bottom: 1px solid #DAD4CA;
-      -webkit-transition: border .4s linear;
-      -webkit-transition: color .2s linear; }
+  .navbar ul {
+    overflow: auto;
+    width: 100%;
+    background-color: #565148;
+    list-style-type: none;
+    margin: 0 auto; }
+    .navbar ul li {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      color: white;
+      margin: 2%;
+      padding: 0 0 4px;
+      color: white; }
+      .navbar ul li:hover {
+        color: #DAD4CA;
+        border-bottom: 2px solid #DAD4CA;
+        -webkit-transition: border .4s slide-in;
+        -webkit-transition: color .2s linear;
+        cursor: pointer; }
 
 *,
 *::before,
