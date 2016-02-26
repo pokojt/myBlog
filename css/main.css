@@ -79,7 +79,8 @@ body {
     font-weight: lighter;
     color: lightgray; }
     #postSummaries .summaryText h2 {
-      letter-spacing: 3px; }
+      letter-spacing: 4px;
+      font-family: 'courier'; }
     #postSummaries .summaryText p {
       font-size: .9em; }
     #postSummaries .summaryText .recent {
@@ -141,22 +142,23 @@ body {
     width: 100%;
     background-color: #444444;
     list-style-type: none;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 5vh; }
     .navbar ul li {
       display: inline-block;
       font-size: 12px;
       font-weight: normal;
       letter-spacing: 2px;
       color: white;
-      margin: 2%;
+      margin: 1%;
       padding: 0 0 4px;
       color: white; }
       .navbar ul li:hover {
+        letter-spacing: 3px;
         color: #FFF7F5;
         border-bottom: 2px solid #FFF7F5;
         -webkit-transition: border .4s slide-in;
-        -webkit-transition: color .2s linear;
-        cursor: pointer; }
+        -webkit-transition: color .2s linear; }
 
 *,
 *::before,

@@ -74,7 +74,8 @@
     @include position(relative,9% auto 5% auto);
     @include text(null, lighter, null, null, lightgray);
     h2 {
-      letter-spacing: 3px;
+      letter-spacing: 4px;
+      font-family: 'courier';
     }
     p {
       font-size: .9em;

@@ -9,18 +9,19 @@
     background-color: $navBrown;
     list-style-type: none;
     margin: 0 auto;
+    height: 5vh;
     li {
       display: inline-block;
       @include text(12px, normal, null, 2px, $white);
-      @include margin(2%);
+      @include margin(1%);
       @include padding(0 0 4px 0);
       color: white;
       &:hover {
+        letter-spacing: 3px;
         color: $navHover;
         border-bottom: 2px solid $navHover;
         -webkit-transition: border .4s slide-in;
         -webkit-transition: color .2s linear;
-        cursor: pointer;
       }
     }
   }
