@@ -27,12 +27,19 @@ body {
   @media screen and (max-width: 1100px) {
     #featuredPost {
       width: 60%; } }
+  @media screen and (max-width: 665px) {
+    #featuredPost {
+      float: none;
+      width: 100%; } }
   #featuredPost .featuredImg {
     height: 50vh;
     width: 100%;
     background-size: cover;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/rain.jpeg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/rain.jpeg"); }
+    @media screen and (max-width: 665px) {
+      #featuredPost .featuredImg {
+        height: 25vh; } }
   #featuredPost .featuredText {
     font-size: 14px;
     font-weight: normal;
@@ -55,6 +62,10 @@ body {
   @media screen and (max-width: 1100px) {
     #postSummaries {
       width: 40%; } }
+  @media screen and (max-width: 665px) {
+    #postSummaries {
+      float: none;
+      width: 100%; } }
   #postSummaries .summary {
     width: 100%;
     height: 25vh;
@@ -175,6 +186,7 @@ body {
   width: 100%;
   margin: 0 auto; }
   .navbar ul {
+    padding-left: 0;
     width: 100%;
     background-color: #444444;
     list-style-type: none;
