@@ -8,16 +8,34 @@
     padding:2% 5% 2% 5%;
     opacity: .7;
     background-color: $navBrown;
-  }
-  .commentBox {
-    clear: both;
-    border-radius: 10px;
-    textarea {
-      border-color: lighten($navBrown, 20%);
-      background: $navBrown;
-      border-radius: 10px;
-      height: 5vh;
-      @include text(10px, null, 20px, null, $white);
+    .commentBox {
+      text-align: left;
+      clear: both;
+      textarea {
+        border-color: lighten($navBrown, 20%);
+        background: $navBrown;
+        border-radius: 3px;
+        height: 7vh;
+        width: 75%;
+        @include text(14px, null, 20px, null, $white);
+        font-family: 'courier';
+      }
+    }
+    .fakeComments .comment1{
+      text-align: left;
+      overflow: auto;
+      margin-top: 20px;
+      h3 {
+        font-size: 16px;
+        margin-bottom: 3px;
+        color: black;
+      }
+      p {
+        margin-top: 5px;
+        padding-left: 10px;
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 }
