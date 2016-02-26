@@ -134,12 +134,18 @@ body {
 a {
   text-decoration: none; }
 
-.likesComments img {
-  width: 30px;
-  float: left; }
-.likesComments .likes, .likesComments .comments {
-  display: block;
-  float: left;
-  margin-right: 5%; }
+.likesComments {
+  overflow: auto; }
+  .likesComments img {
+    margin-top: 8px;
+    width: 25px;
+    float: left;
+    opacity: .6;
+    margin-right: 7px; }
+  .likesComments p {
+    float: left; }
+  .likesComments .likes, .likesComments .comments {
+    float: left;
+    margin-right: 5%; }
 
 /*# sourceMappingURL=main.css.map */

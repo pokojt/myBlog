@@ -1,12 +1,18 @@
 // Icon Styles
 
 .likesComments {
+  overflow: auto;
   img {
-    width: 30px;
+    margin-top: 8px;
+    width: 25px;
+    float: left;
+    opacity: .6;
+    margin-right: 7px;
+  }
+  p {
     float: left;
   }
   .likes, .comments {
-    display: block;
     float: left;
     margin-right: 5%;
   }
