@@ -142,6 +142,10 @@ body {
 a {
   text-decoration: none; }
 
+.navbar img {
+  width: 25px;
+  opacity: .7; }
+
 .likesComments {
   overflow: auto; }
   .likesComments img {
