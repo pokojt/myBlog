@@ -4,4 +4,90 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body {
+  text-align: center; }
+
+.row {
+  overflow: auto; }
+
+#featuredPost {
+  width: 50%;
+  float: left; }
+  #featuredPost .featuredImg {
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
+    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/forest.jpeg");
+    background-image: linear-gradient(to   , white 10px), url("../img/forest.jpeg"); }
+
+#postSummaries {
+  width: 50%;
+  float: left; }
+  #postSummaries .summary {
+    width: 100%;
+    height: 25vh;
+    background-size: cover; }
+  #postSummaries #post1 {
+    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/tea.jpg");
+    background-image: linear-gradient(to   , white 10px), url("../img/tea.jpg"); }
+  #postSummaries #post2 {
+    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/cabin.jpg");
+    background-image: linear-gradient(to   , white 10px), url("../img/cabin.jpg"); }
+  #postSummaries #post3 {
+    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/girl.jpg");
+    background-image: linear-gradient(to   , white 10px), url("../img/girl.jpg"); }
+  #postSummaries #post4 {
+    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/stars.jpg");
+    background-image: linear-gradient(to   , white 10px), url("../img/stars.jpg"); }
+
+.pageWrapper {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  .pageWrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.header {
+  background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/girl2.jpg");
+  background-image: linear-gradient(to   , white 10px), url("../img/girl2.jpg");
+  background-size: cover;
+  height: 50vh; }
+
+.navbar ul {
+  overflow: auto;
+  width: 100%;
+  background-color: #565148;
+  list-style-type: none;
+  margin: 0 auto; }
+  .navbar ul li {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+    color: white; }
+    .navbar ul li:hover {
+      color: #DAD4CA;
+      text-decoration: underline; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  background: #DAD4CA;
+  font-family: sans-serif; }
+
+a {
+  text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,5 @@
+.header {
+  @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/girl2.jpg"));
+  background-size: cover;
+  height: 50vh;
+}

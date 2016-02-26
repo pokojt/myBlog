@@ -1,0 +1,35 @@
+.row {
+  overflow: auto;
+}
+#featuredPost {
+  width: 50%;
+  float: left;
+  .featuredImg {
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
+    @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/forest.jpeg"));
+  }
+}
+
+#postSummaries {
+  width: 50%;
+  float: left;
+  .summary {
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+  }
+  #post1 {
+      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/tea.jpg"));
+  }
+  #post2 {
+      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/cabin.jpg"));
+  }
+  #post3 {
+      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/girl.jpg"));
+  }
+  #post4 {
+      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/stars.jpg"));
+  }
+}

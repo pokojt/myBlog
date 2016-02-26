@@ -1,0 +1,18 @@
+.navbar {
+  ul {
+    overflow: auto;
+    width: 100%;
+    background-color: $navBrown;
+    list-style-type: none;
+    margin: 0 auto;
+    li {
+      display: inline-block;
+      @include text(15px, normal, null, 1px, $white);
+      color: white;
+      &:hover {
+        color: $navHover;
+        text-decoration: underline;
+      }
+    }
+  }
+}
