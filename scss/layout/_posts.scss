@@ -17,7 +17,7 @@
   opacity: .8;
   height: 100vh;
   .featuredImg {
-    height: 25vh;
+    height: 50vh;
     width: 100%;
     background-size: cover;
     @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/forest.jpeg"));
@@ -25,6 +25,9 @@
   .featuredText {
     @extend %columnText;
     @include text(14px, normal, 24px, 0, null);
+    h1 {
+      letter-spacing: 5px;
+    }
   }
 }
 
@@ -32,6 +35,9 @@
   width: 50%;
   float: left;
   text-align: left;
+  &:hover {
+    cursor: pointer;
+  }
   .summary {
     @extend %columnText;
     width: 100%;
@@ -39,20 +45,25 @@
     background-size: cover;
   }
   #post1 {
-      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/tea.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.35),rgba(black, 0.35)),url("#{$path-img}/tea.jpg"));
   }
   #post2 {
-      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/cabin.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.35),rgba(black, 0.35)),url("#{$path-img}/cabin.jpg"));
   }
   #post3 {
-      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/girl.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.35),rgba(black, 0.35)),url("#{$path-img}/girl.jpg"));
+      padding-top: 7%;
   }
   #post4 {
-      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/stars.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.35),rgba(black, 0.35)),url("#{$path-img}/stars.jpg"));
+      padding-top: 8%;
   }
   .summaryText {
     @include position(relative,10% auto 5% auto);
     @include text(null, lighter, null, null, lightgray);
+    h2 {
+      letter-spacing: 3px;
+    }
     p {
       font-size: .9em;
     }
