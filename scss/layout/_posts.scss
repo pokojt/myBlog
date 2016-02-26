@@ -17,6 +17,9 @@
   opacity: .8;
   overflow: scroll;
   height: 100vh;
+  @media screen and #{$brk-smallDesktopcontainer} {
+    width: 60%;
+  }
   .featuredImg {
     height: 50vh;
     width: 100%;
@@ -45,6 +48,9 @@
   float: left;
   text-align: left;
   font-family: sans-serif;
+  @media screen and #{$brk-smallDesktopcontainer} {
+    width: 40%;
+  }
   .summary {
     @extend %columnText;
     width: 100%;
@@ -95,5 +101,11 @@
     @media screen and #{$brk-smallDesktop} {
       @include position(relative, 0% auto 5% auto);
     }
+  }
+}
+
+.hide {
+  @media screen and #{$brk-smallDesktopicons} {
+    display: none;
   }
 }

@@ -24,6 +24,9 @@ body {
   opacity: .8;
   overflow: scroll;
   height: 100vh; }
+  @media screen and (max-width: 1100px) {
+    #featuredPost {
+      width: 60%; } }
   #featuredPost .featuredImg {
     height: 50vh;
     width: 100%;
@@ -49,6 +52,9 @@ body {
   float: left;
   text-align: left;
   font-family: sans-serif; }
+  @media screen and (max-width: 1100px) {
+    #postSummaries {
+      width: 40%; } }
   #postSummaries .summary {
     width: 100%;
     height: 25vh;
@@ -106,6 +112,10 @@ body {
         bottom: 5%;
         left: auto; } }
 
+@media screen and (max-height: 1024px) {
+  .hide {
+    display: none; } }
+
 .pageWrapper {
   max-width: 98%;
   margin-left: auto;
@@ -114,6 +124,15 @@ body {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 1100px) {
+    .pageWrapper {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .pageWrapper::after {
+        clear: both;
+        content: "";
+        display: table; } }
 
 .contentWrapper {
   height: 100%; }
@@ -145,7 +164,8 @@ body {
     font-weight: normal;
     line-height: normal;
     letter-spacing: 5px;
-    color: #444444; }
+    color: #444444;
+    text-shadow: 1px 1px 1px #FFF7F5; }
     .header .headerText h1 {
       font-size: 3em; }
 
@@ -220,7 +240,7 @@ a {
     display: block;
     float: left;
     margin-right: 5%; }
-    @media only screen and (max-height: 990px) {
+    @media only screen and (max-height: 1024px) {
       .likesComments .likes, .likesComments .comments {
         display: none; } }
 

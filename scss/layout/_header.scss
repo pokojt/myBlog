@@ -6,6 +6,7 @@
   .headerText {
     @include position(relative, 30% auto 10% auto);
     @include text(null, normal, normal, 5px, $navBrown);
+    text-shadow: 1px 1px 1px $backgroundWhite;
     h1 {
       font-size: 3em;
     }

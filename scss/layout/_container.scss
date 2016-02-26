@@ -1,5 +1,8 @@
 .pageWrapper {
   @include outer-container(98%);
+  @media screen and #{$brk-smallDesktopcontainer} {
+    @include outer-container(100%);
+  }
 }
 
 .contentWrapper {
