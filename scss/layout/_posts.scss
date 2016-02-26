@@ -1,14 +1,26 @@
+
+//
+
+// @include background-image(linear-gradient(rgba($spaceOrange, 0.45),rgba($spaceOrange, 0.45)),url("#{$path-img}/copernicus.jpg"));
+
+  // @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/girl.jpg"));
+
+
+
 .row {
   overflow: auto;
 }
 #featuredPost {
   width: 50%;
   float: left;
+  background: $white;
+  opacity: .8;
+  height: 100vh;
   .featuredImg {
     height: 25vh;
     width: 100%;
     background-size: cover;
-    @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/forest.jpeg"));
+    @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/forest.jpeg"));
   }
 }
 
@@ -21,15 +33,18 @@
     background-size: cover;
   }
   #post1 {
-      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/tea.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/tea.jpg"));
   }
   #post2 {
-      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/cabin.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/cabin.jpg"));
   }
   #post3 {
-      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/girl.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/girl.jpg"));
   }
   #post4 {
-      @include background-image(linear-gradient(transparent 100%, white 10px),url("#{$path-img}/stars.jpg"));
+      @include background-image(linear-gradient(rgba(black, 0.25),rgba(black, 0.25)),url("#{$path-img}/stars.jpg"));
+  }
+  .summaryText {
+    @include position(relative,30% auto 5% auto);
   }
 }

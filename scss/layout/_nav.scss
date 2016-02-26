@@ -8,10 +8,14 @@
     li {
       display: inline-block;
       @include text(15px, normal, null, 1px, $white);
+      @include margin(2%);
+      @include padding(0 0 4px 0);
       color: white;
       &:hover {
         color: $navHover;
-        text-decoration: underline;
+        border-bottom: 1px solid $navHover;
+        -webkit-transition: border .4s linear;
+        -webkit-transition: color .2s linear;
       }
     }
   }

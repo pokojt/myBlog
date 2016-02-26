@@ -12,13 +12,16 @@ body {
 
 #featuredPost {
   width: 50%;
-  float: left; }
+  float: left;
+  background: white;
+  opacity: .8;
+  height: 100vh; }
   #featuredPost .featuredImg {
     height: 25vh;
     width: 100%;
     background-size: cover;
-    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/forest.jpeg");
-    background-image: linear-gradient(to   , white 10px), url("../img/forest.jpeg"); }
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/forest.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/forest.jpeg"); }
 
 #postSummaries {
   width: 50%;
@@ -28,17 +31,23 @@ body {
     height: 25vh;
     background-size: cover; }
   #postSummaries #post1 {
-    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/tea.jpg");
-    background-image: linear-gradient(to   , white 10px), url("../img/tea.jpg"); }
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/tea.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/tea.jpg"); }
   #postSummaries #post2 {
-    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/cabin.jpg");
-    background-image: linear-gradient(to   , white 10px), url("../img/cabin.jpg"); }
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/cabin.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/cabin.jpg"); }
   #postSummaries #post3 {
-    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/girl.jpg");
-    background-image: linear-gradient(to   , white 10px), url("../img/girl.jpg"); }
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/girl.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/girl.jpg"); }
   #postSummaries #post4 {
-    background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/stars.jpg");
-    background-image: linear-gradient(to   , white 10px), url("../img/stars.jpg"); }
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/stars.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/stars.jpg"); }
+  #postSummaries .summaryText {
+    position: relative;
+    top: 30%;
+    right: auto;
+    bottom: 5%;
+    left: auto; }
 
 .pageWrapper {
   max-width: 95%;
@@ -50,10 +59,20 @@ body {
     display: table; }
 
 .header {
-  background-image: -webkit-linear-gradient(transparent 100%, white 10px), url("../img/girl2.jpg");
-  background-image: linear-gradient(to   , white 10px), url("../img/girl2.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/girl2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/girl2.jpg");
   background-size: cover;
   height: 50vh; }
+  .header .headerText {
+    position: relative;
+    top: 30%;
+    right: auto;
+    bottom: 10%;
+    left: auto;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 5px;
+    color: white; }
 
 .navbar ul {
   overflow: auto;
@@ -67,10 +86,14 @@ body {
     font-weight: normal;
     letter-spacing: 1px;
     color: white;
+    margin: 2%;
+    padding: 0 0 4px;
     color: white; }
     .navbar ul li:hover {
       color: #DAD4CA;
-      text-decoration: underline; }
+      border-bottom: 1px solid #DAD4CA;
+      -webkit-transition: border .4s linear;
+      -webkit-transition: color .2s linear; }
 
 *,
 *::before,
