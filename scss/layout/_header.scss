@@ -6,5 +6,8 @@
   .headerText {
     @include position(relative, 30% auto 10% auto);
     @include text(null, normal, normal, 5px, $navBrown);
+    h1 {
+      font-size: 3em;
+    }
   }
 }

@@ -35,7 +35,8 @@
       letter-spacing: 5px;
     }
     .featured {
-      @include text(11px, normal, null, 2px, lightgray);
+      @include text(11px, normal, null, 2px, gray);
+      font-family: sans-serif;
     }
   }
 }
@@ -44,6 +45,7 @@
   width: 50%;
   float: left;
   text-align: left;
+  font-family: sans-serif;
   .summary {
     @extend %columnText;
     width: 100%;

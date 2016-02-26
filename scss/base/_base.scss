@@ -13,7 +13,7 @@ html, body {
 body {
   @extend %centeredText;
   background: $backgroundWhite;
-  font-family: sans-serif;
+  font-family: 'courier';
 }
 
 body::-webkit-scrollbar {
