@@ -56,10 +56,10 @@ body {
     #postSummaries .summary:hover {
       height: 29vh;
       -webkit-transition: height .3s linear; }
-      @media screen and (max-height: 1060px) {
+      @media screen and (max-height: 1140px) {
         #postSummaries .summary:hover {
           height: 27vh; } }
-    @media screen and (max-height: 1060px) {
+    @media screen and (max-height: 1140px) {
       #postSummaries .summary {
         height: 25vh;
         overflow: hidden; } }
@@ -95,10 +95,10 @@ body {
       font-weight: normal;
       letter-spacing: 2px;
       color: lightgray; }
-      @media screen and (max-height: 1060px) {
+      @media screen and (max-height: 1140px) {
         #postSummaries .summaryText .recent {
           display: none; } }
-    @media screen and (max-height: 1060px) {
+    @media screen and (max-height: 1140px) {
       #postSummaries .summaryText {
         position: relative;
         top: 0%;
@@ -155,13 +155,12 @@ body {
   width: 100%;
   margin: 0 auto; }
   .navbar ul {
-    overflow: auto;
     width: 100%;
     background-color: #444444;
     list-style-type: none;
     margin: 0 auto;
     height: 5vh; }
-    @media screen and (max-height: 1060px) {
+    @media screen and (max-height: 1140px) {
       .navbar ul {
         height: 6vh; } }
     .navbar ul li {
@@ -207,7 +206,8 @@ a {
   opacity: .7; }
 
 .likesComments {
-  overflow: auto; }
+  overflow: auto;
+  display: block; }
   .likesComments img {
     margin-top: 8px;
     width: 25px;
@@ -217,8 +217,12 @@ a {
   .likesComments p {
     float: left; }
   .likesComments .likes, .likesComments .comments {
+    display: block;
     float: left;
     margin-right: 5%; }
+    @media only screen and (max-height: 990px) {
+      .likesComments .likes, .likesComments .comments {
+        display: none; } }
 
 #featuredPost .likesComments {
   height: 25vh;
