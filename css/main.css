@@ -170,4 +170,11 @@ a {
     float: left;
     margin-right: 5%; }
 
+#featuredPost .likesComments {
+  width: 100%;
+  color: white;
+  padding-left: 5%;
+  opacity: .9;
+  background-color: #444444; }
+
 /*# sourceMappingURL=main.css.map */
