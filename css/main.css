@@ -105,6 +105,9 @@ body {
     #postSummaries .summaryText h2 {
       letter-spacing: 4px;
       font-family: 'courier'; }
+      @media screen and (max-width: 336px) {
+        #postSummaries .summaryText h2 {
+          font-size: 1em; } }
     #postSummaries .summaryText p {
       font-size: .9em; }
     #postSummaries .summaryText .recent {
@@ -125,6 +128,10 @@ body {
 
 @media screen and (max-height: 1024px) {
   .hide {
+    display: none; } }
+
+@media screen and (max-width: 450px) {
+  .briefSummary {
     display: none; } }
 
 .pageWrapper {
@@ -179,6 +186,9 @@ body {
     text-shadow: 1px 1px 1px #FFF7F5; }
     .header .headerText h1 {
       font-size: 3em; }
+      @media screen and (max-width: 336px) {
+        .header .headerText h1 {
+          margin-top: 0; } }
 
 .navbar {
   position: top;
@@ -195,6 +205,10 @@ body {
     @media screen and (max-height: 1140px) {
       .navbar ul {
         height: 6vh; } }
+    @media screen and (max-width: 336px) {
+      .navbar ul {
+        height: 8vh;
+        text-align: right; } }
     .navbar ul li {
       display: inline-block;
       font-size: 12px;
@@ -204,6 +218,9 @@ body {
       margin: 1%;
       padding: 0 0 4px;
       color: white; }
+      @media screen and (max-width: 450px) {
+        .navbar ul li {
+          padding: 3% 0 0; } }
       .navbar ul li:hover {
         letter-spacing: 3px;
         color: #FFF7F5;
@@ -236,6 +253,10 @@ a {
 .navbar img {
   width: 25px;
   opacity: .7; }
+  @media screen and (max-width: 450px) {
+    .navbar img {
+      width: 1px;
+      display: none; } }
 
 .likesComments {
   overflow: auto;
@@ -255,6 +276,9 @@ a {
     @media only screen and (max-height: 1024px) {
       .likesComments .likes, .likesComments .comments {
         display: none; } }
+    @media screen and (max-width: 450px) {
+      .likesComments .likes, .likesComments .comments {
+        display: block; } }
 
 #featuredPost .likesComments {
   height: 25vh;
@@ -264,6 +288,9 @@ a {
   opacity: .7;
   background-color: #444444;
   overflow: hidden; }
+  @media screen and (max-width: 450px) {
+    #featuredPost .likesComments {
+      display: none; } }
   #featuredPost .likesComments .commentBox {
     text-align: left;
     clear: both; }

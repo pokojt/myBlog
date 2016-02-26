@@ -14,12 +14,19 @@
     @media screen and #{$brk-smallDesktop} {
       height: 6vh;
     }
+    @media screen and #{$brk-mobilesmall} {
+      height: 8vh;
+      text-align: right;
+    }
     li {
       display: inline-block;
       @include text(12px, normal, null, 2px, $white);
       @include margin(1%);
       @include padding(0 0 4px 0);
       color: white;
+      @media screen and #{$brk-mobileLarge} {
+          @include padding(3% 0 0 0);
+      }
       &:hover {
         letter-spacing: 3px;
         color: $navHover;

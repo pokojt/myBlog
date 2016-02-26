@@ -9,6 +9,9 @@
     text-shadow: 1px 1px 1px $backgroundWhite;
     h1 {
       font-size: 3em;
+      @media screen and #{$brk-mobilesmall} {
+        margin-top: 0;
+      }
     }
   }
 }

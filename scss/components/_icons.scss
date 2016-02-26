@@ -3,7 +3,12 @@
   img {
     width: 25px;
     opacity: .7;
+    @media screen and #{$brk-mobileLarge} {
+      width: 1px;
+      display: none;
+    }
   }
+
 }
 
 
@@ -26,6 +31,9 @@
     margin-right: 5%;
     @media only screen and #{$brk-smallDesktopicons} {
       display: none;
+    }
+    @media screen and #{$brk-mobileLarge} {
+      display: block;
     }
   }
 }

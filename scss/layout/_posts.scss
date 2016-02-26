@@ -99,6 +99,9 @@
     h2 {
       letter-spacing: 4px;
       font-family: 'courier';
+      @media screen and #{$brk-mobilesmall} {
+        font-size: 1em;
+      }
     }
     p {
       font-size: .9em;
@@ -117,6 +120,13 @@
 
 .hide {
   @media screen and #{$brk-smallDesktopicons} {
+    display: none;
+  }
+}
+
+
+.briefSummary {
+  @media screen and #{$brk-mobileLarge} {
     display: none;
   }
 }
