@@ -1,0 +1,23 @@
+//Comment Box styles
+
+#featuredPost {
+  .likesComments {
+    height: 25vh;
+    width: 100%;
+    color: white;
+    padding:2% 5% 2% 5%;
+    opacity: .7;
+    background-color: $navBrown;
+  }
+  .commentBox {
+    clear: both;
+    border-radius: 10px;
+    textarea {
+      border-color: lighten($navBrown, 20%);
+      background: $navBrown;
+      border-radius: 10px;
+      height: 5vh;
+      @include text(10px, null, 20px, null, $white);
+    }
+  }
+}

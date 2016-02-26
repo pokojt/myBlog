@@ -1,0 +1,10 @@
+.footer {
+  clear: both;
+  margin: 5% 0 2% 0;
+  text-transform: uppercase;
+  @include text(10px, normal, null, 1px, gray);
+  hr {
+    color: gray;
+    width: 70%;
+  }
+}

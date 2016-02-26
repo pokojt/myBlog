@@ -34,6 +34,9 @@
     h1 {
       letter-spacing: 5px;
     }
+    .featured {
+      @include text(11px, normal, null, 2px, lightgray);
+    }
   }
 }
 
@@ -49,6 +52,10 @@
     width: 100%;
     height: 25vh;
     background-size: cover;
+    &:hover {
+      height: 29vh;
+      -webkit-transition: height .3s linear;
+    }
   }
   #post1 {
       @include background-image(linear-gradient(rgba(black, 0.35),rgba(black, 0.35)),url("#{$path-img}/tea.jpg"));
@@ -65,13 +72,16 @@
       padding-top: 8%;
   }
   .summaryText {
-    @include position(relative,10% auto 5% auto);
+    @include position(relative,9% auto 5% auto);
     @include text(null, lighter, null, null, lightgray);
     h2 {
       letter-spacing: 3px;
     }
     p {
       font-size: .9em;
+    }
+    .recent {
+      @include text(11px, normal, null, 2px, lightgray);
     }
   }
 }
