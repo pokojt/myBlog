@@ -47,8 +47,6 @@ body {
   width: 50%;
   float: left;
   text-align: left; }
-  #postSummaries:hover {
-    cursor: pointer; }
   #postSummaries .summary {
     width: 100%;
     height: 25vh;
@@ -175,7 +173,8 @@ body::-webkit-scrollbar {
   display: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
 .navbar img {
   width: 25px;

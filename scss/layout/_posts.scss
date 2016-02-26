@@ -44,9 +44,6 @@
   width: 50%;
   float: left;
   text-align: left;
-  &:hover {
-    cursor: pointer;
-  }
   .summary {
     @extend %columnText;
     width: 100%;
