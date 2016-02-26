@@ -7,6 +7,10 @@ html {
 body {
   text-align: center; }
 
+#featuredPost .featuredText, #postSummaries .summary {
+  text-align: left;
+  padding: 5%; }
+
 .row {
   overflow: auto; }
 
@@ -22,10 +26,16 @@ body {
     background-size: cover;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/forest.jpeg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/forest.jpeg"); }
+  #featuredPost .featuredText {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0; }
 
 #postSummaries {
   width: 50%;
-  float: left; }
+  float: left;
+  text-align: left; }
   #postSummaries .summary {
     width: 100%;
     height: 25vh;
@@ -44,13 +54,17 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/stars.jpg"); }
   #postSummaries .summaryText {
     position: relative;
-    top: 30%;
+    top: 10%;
     right: auto;
     bottom: 5%;
-    left: auto; }
+    left: auto;
+    font-weight: lighter;
+    color: lightgray; }
+    #postSummaries .summaryText p {
+      font-size: .9em; }
 
 .pageWrapper {
-  max-width: 95%;
+  max-width: 98%;
   margin-left: auto;
   margin-right: auto; }
   .pageWrapper::after {
@@ -83,7 +97,7 @@ body {
   .navbar ul {
     overflow: auto;
     width: 100%;
-    background-color: #565148;
+    background-color: #444444;
     list-style-type: none;
     margin: 0 auto; }
     .navbar ul li {
@@ -119,5 +133,13 @@ body {
 
 a {
   text-decoration: none; }
+
+.likesComments img {
+  width: 30px;
+  float: left; }
+.likesComments .likes, .likesComments .comments {
+  display: block;
+  float: left;
+  margin-right: 5%; }
 
 /*# sourceMappingURL=main.css.map */

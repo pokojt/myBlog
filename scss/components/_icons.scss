@@ -1,0 +1,13 @@
+// Icon Styles
+
+.likesComments {
+  img {
+    width: 30px;
+    float: left;
+  }
+  .likes, .comments {
+    display: block;
+    float: left;
+    margin-right: 5%;
+  }
+}
